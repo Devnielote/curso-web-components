@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Elements</title>
+  </head>
+  <body>
+    <!-- Con los atributos ya definidos en nuestro JS, podemos asignarlos en la etiqueta de nuestro web component para que este se encargue de inyectarlos. -->
+    <my-element
+      title="Soy un título creado como atributo en la etiqueta de mi componente"
+      text="Texto generado al igual que el título, como atributo de la etiqueta de mi web component.
+      <br>
+      El src de la siguiente imagen tambien fue inyectado como un atributo del web component ;)."
+      img="https://web-components-resources.appspot.com/static/logo.svg"
+    ></my-element>
+    <my-element
+      title="Soy otro título generado directamente en el atributo de una etiqueta HTML"
+      text="Texto generado al igual que el título, como atributo de la etiqueta de mi web component.
+      <br>
+      El src de la siguiente imagen tambien fue inyectado como un atributo del web component ;)."
+      img="https://web-components-resources.appspot.com/static/logo.svg"
+    ></my-element>
+    <script type="module" src="./attributeChangedCallback.js"></script>
+  </body>
+</html>

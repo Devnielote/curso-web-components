@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Elements</title>
+  </head>
+  <body>
+    <my-element>
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <my-element class="blue">
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <my-element yellow>
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <article class="card">
+      <my-element yellow>
+        <h2 class="title" slot="title">
+          Títlo modificable desde fuera del web componente 1
+        </h2>
+        <p slot="text">
+          Soy texto generado fuera del componente a tráves de multi content
+          slot!
+        </p>
+      </my-element>
+      <div>Hola paparros</div>
+    </article>
+    <script type="module" src="./::sloted.js"></script>
+  </body>
+</html>

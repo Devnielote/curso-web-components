@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Elements</title>
+    <style>
+      my-element {
+        --color-primary: tomato;
+        --color-secondary: pink;
+        --title-primary: 35px;
+      }
+
+      .second {
+        --color-primary: gold;
+        --color-secondary: green;
+      }
+
+      .third {
+        --color-primary: violet;
+        --color-secondary: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <my-element>
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <my-element class="second">
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <my-element class="third">
+      <h2 slot="title">Títlo modificable desde fuera del web componente 1</h2>
+      <p slot="text">
+        Soy texto generado fuera del componente a tráves de multi content slot!
+      </p>
+    </my-element>
+    <script type="module" src="./customProperties.js"></script>
+  </body>
+</html>
