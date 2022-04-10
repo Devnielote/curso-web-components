@@ -1,4 +1,9 @@
-# Curso de web components.
-Conceptos básicos sobre la creación y manejo de web components utilizando vanilla JS.
-Hello there, en este curso se estudia el funcionamiento de los web components. Las APIs del navegador nos brindan la posibilidad de crear código reutilizable y modificable.
-Con el plus de que los componentes que hagamos pueden coexistir entre los distintos framewroks que utilicemos. Todo gracias a que estan hechos en base a los estándares de JS.
+# Curso de web components
+## Hello there!
+Se verán conceptos básicos para la creación y manejo de web components.
+- APIs que el navegador pone a nuestra disposición.
+- Creación de web components utilizando clases.
+- Métodos recomendados para el renderizado y manejo de los mismos.
+- ShadowDOM, cómo instanciarlo y aprovecharlo para evitar sobrescribit estilos.
+- Agregar o modificar datos de nuestro componente de forma dinámica.
+- Creación de atributos personalizados para nuestras etiquetas.
